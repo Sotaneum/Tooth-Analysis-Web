@@ -1,0 +1,349 @@
+@font-face { 
+    font-family: 'GoodFont'; /* 폰트 패밀리 이름 주기*/ 
+    src: url('./font/TmonMonsori.ttf.ttf'); /*폰트 파일 주소*/ 
+}
+
+@font-face { 
+    font-family: 'locus_sangsang'; 
+    src: url('./font/locus_sangsang.ttf') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'BMHANNAAir'; 
+    src: url('./font/BMHANNAAir_ttf.ttf') format('woff'); 
+}
+
+@keyframes rotate_image {
+    0% { transform: rotate(0deg); }
+    100% { 
+        transform: rotate(720deg);
+     }
+}
+
+@keyframes rotate3d_image{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'BMHANNAAir';
+    position: absolute;
+}
+
+body{
+    background-color:#252a34;
+}
+
+/* =========div========== */
+.div{
+    position: fixed;
+    width: 600px;
+    height: 500px;
+    left:calc(50vw - 300px);
+    top:calc(50vh - 250px);
+}
+/* =========div_body========== */
+.div_body{
+    top:0px;
+    left:130px;
+    width: 470px;
+    height: 430px;
+}
+/* =========div_demo========== */
+.div_demo{
+    top:0px;
+    left:20px;
+    width: 120px;
+    height: 430px;
+}
+.div_demo_imglist{
+    width: 120px;
+    height: 426px;
+    top:calc(50% - 213px);
+    left:0px;
+}
+.div_demo_imglist p{
+    position: relative;
+    width: 120px;
+    height: 30px;
+    font-size: 20PX;
+    color:#ff2e63;
+}
+.div_demo_imglist_img{
+    position: relative;
+    margin-bottom: 12px; 
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+.div_demo_imglist_img p{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top:calc(50% - 10px);
+    color:#252a34;
+    display: none;
+}
+.div_demo_imglist_img img{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #ff2e63;
+    border-radius: 100%;
+    border: 0px transparent;
+}
+.div_demo_imglist_img:hover img{
+    opacity: 0.3;
+}
+.div_demo_imglist_img:hover p{
+    color: #ff2e63;
+    display: block;
+}
+/* =========div_copyright========== */
+.div_copyright{
+    top:430px;
+    left:0px;
+    width: 600px;
+    height: 64px;
+    color:#eaeaea; 
+}
+
+.div_copyright *{
+    position: relative;
+}
+/* =========div_body_loading========== */
+.div_body_loading{
+    width: 90px;
+    height: 90px;
+    top:calc(50% - 45px);
+    left:calc(50% - 45px);
+    cursor: progress;
+}
+
+.div_body_loading_ball{
+    min-width: 90px;
+    min-height: 90px;
+    background-image: url("./image/loading.png");
+    animation: rotate_image 2.7s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%; 
+    cursor: progress;
+}
+
+.div_body_loading_img{
+    width: 90px;
+    height: 90px;
+    background-image: url('./image/loading2.png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 50% 50%;
+    animation: rotate3d_image 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%; 
+    cursor: progress;
+}
+
+.s1{
+    animation-delay: 0.1s;
+    opacity: 0.9;
+}
+
+.s2{
+    animation-delay: 0.13s;
+    opacity: 0.8;
+}
+
+.s3{
+    animation-delay: 0.16s;
+    opacity: 0.7;
+}
+
+.s4{
+    animation-delay: 0.19s;
+    opacity: 0.6;
+}
+
+.s5{
+    animation-delay: 0.22s;
+    opacity: 0.5;
+}
+
+.s6{
+    animation-delay: 0.25s;
+    opacity: 0.4;
+}
+
+.s7{
+    animation-delay: 0.28s;
+    opacity: 0.3;
+}
+
+.s8{
+    animation-delay: 0.31s;
+    opacity: 0.2;
+}
+
+.s9{
+    animation-delay: 0.34s;
+    opacity: 0.1;
+}
+/* =========div_body_upload========== */
+.div_body_upload{
+    width: 400px;
+    height: 400px;
+    top:calc(50% - 200px);
+    left:calc(50% - 200px);
+    border-radius: 100%;
+    background-color: #eaeaea;
+    border:2px solid #ff2e63;
+    display: none;
+}
+
+.div_body_upload_background{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    opacity: 0.2;
+    background-color:#ff2e63; 
+}
+
+.div_body_upload_background img{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+
+.div_body_upload_info{
+    width: 400px;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.div_body_upload_info img{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.div_body_upload_info p{
+    bottom: 50px;
+    width: 400px;
+    font-size:20px;
+}
+
+.div_body_upload_info_cnt{
+    position: relative;
+}
+
+.div_body_upload_btn{
+    width: 400px;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.div_body_upload_btn input{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    color:transparent;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.div_body_upload_btn input:hover{
+    background-color: #252a34;
+    opacity: 0.7;
+}
+/* =========div_body_result========== */
+.div_body_result{
+    width: 400px;
+    height: 400px;
+    top:calc(50% - 200px);
+    left:calc(50% - 200px);
+    border-radius: 1.5%;
+    background-color: #eaeaea;
+    display: none;
+}
+
+.div_body_result_img{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.div_body_result_img canvas{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.div_body_result_info{
+    position: relative;
+    width: 400px;
+    height:200px;
+}
+
+.div_body_result_info_title{
+    position: relative;
+    width: 400px;
+    height:80px;
+    vertical-align: middle;
+}
+
+.div_body_result_info_title h1{
+    width: 360px;
+    margin: 20px;
+    display: block;
+    color:#ff2e63;
+    font-size: 40px;
+    font-family : "locus_sangsang";
+}
+
+.div_body_result_info_title_result{
+    position: relative;
+}
+
+.div_body_result_info_context{
+    width: 400px;
+    height: 120px;
+    display: block;
+}
+
+.div_body_result_info_context p{
+    position: relative;
+    width: 400px;
+    max-width: 400px;
+    max-height: 120px;
+    word-wrap: break-word; 
+    overflow:auto;
+}
+
+.div_body_result_info_context input{
+    width: 400px;
+    bottom: 0px;
+    left:0px;
+    font-size:25px;
+    font-family: "GoodFont";
+}
+
+.div_body_result_info_context_btn{
+    cursor: pointer;
+}

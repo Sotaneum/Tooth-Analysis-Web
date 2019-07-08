@@ -1,0 +1,79 @@
+<html>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.7">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./func.js"></script>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <title>치아 판별기</title>
+    </head>
+    <body>
+        <div class="div">
+            <div class="div_body">
+                    <div class="div_body_loading">
+                        <div class="div_body_loading_img"></div>
+                        <div class="div_body_loading_ball s1"></div>
+                        <div class="div_body_loading_ball s2"></div>
+                        <div class="div_body_loading_ball s3"></div>
+                        <div class="div_body_loading_ball s4"></div>
+                        <div class="div_body_loading_ball s5"></div>
+                        <div class="div_body_loading_ball s6"></div>
+                        <div class="div_body_loading_ball s7"></div>
+                        <div class="div_body_loading_ball s8"></div>
+                        <div class="div_body_loading_ball s9"></div>
+                    </div>
+                <div class="div_body_result">
+                    <div class="div_body_result_img">
+                        <canvas>
+                        </canvas>
+                    </div>
+                    <div class="div_body_result_info">
+                        <div class="div_body_result_info_title">
+                            <h1>결과 : 상위 <label class="div_body_result_info_title_result">0</label>%</h1>
+                        </div>
+                        <div class="div_body_result_info_context">
+                            <p>DeepLeanring을 이용한 방식으로 정확한 비교가 아닙니다. <br>사진은 더 정확한 데이터를 위해 학습데이터로 사용됩니다.<br>제거 및 기타 문의 : gnyontu39@gmail.com</p>
+                            <input class="div_body_result_info_context_btn" type=button value="다른 사진으로 해보기">
+                        </div>
+                    </div>
+                </div>
+                <div class="div_body_upload">
+                    <div class="div_body_upload_background">
+                        <img src="./image/teeth.png">
+                    </div>
+                    <div class="div_body_upload_info">
+                        <img src="./image/search.png">
+                        <p>총 분석 횟수 : <label class="div_body_upload_info_cnt">0</label>회</p>
+                    </div>
+                    <div class="div_body_upload_btn">
+                        <form class="div_body_upload_btn_form">
+                            <input class="div_body_upload_btn_form_input" type="file">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="div_demo">
+                <div class="div_demo_imglist">
+                    <p>Demo</p>
+                    <div class="div_demo_imglist_img" value="1">
+                        <img src="./image/demo01.jpg">
+                        <p>Demo 1</p>
+                    </div>
+                    <div class="div_demo_imglist_img" value="2">
+                        <img src="./image/demo02.jpg">
+                        <p>Demo 2</p>
+                    </div>
+                    <div class="div_demo_imglist_img" value="3">
+                        <img src="./image/demo03.jpg">
+                        <p>Demo 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div_copyright">
+                <p>Copyright 2019 DEV(류동준, 이동건) in KSNU Capstone Design Team</p>
+                <p style="color:red">사진 및 데이터는 서버에 익명으로 저장됩니다.</p>
+                <p style="color:red">저장된 데이터는 더 나은 결과를 위한 학습 데이터로 사용됩니다.</p>
+                <p style="color:red">분석 요청시 해당 내용에 대해 허락한 것으로 합니다.</p>
+            </div>
+        </div>
+    </body>
+</html>

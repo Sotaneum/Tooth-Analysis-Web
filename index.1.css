@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:#eaeaea;
+}
+
+.div_upload{
+    width: 400px;
+    height: 400px;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    border-radius: 100%;
+    border:2px solid #252a34;
+    position: fixed;
+}
+
+.div_upload_background{
+    background-color:#eaeaea;
+    opacity: 0.2;
+    z-index: 4;
+    width: 400px;
+    height: 400px;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    border-radius: 100%;
+    border:2px solid #252a34;
+    position: fixed;
+}
+
+.img_teeth{
+    z-index: 2;
+    opacity: 0.8;
+}
+.div_upload_background_text{
+    width: 400px;
+    height: 60px;
+    top: calc(50vh - 30px);
+    left: calc(50vw - 200px);
+    position: fixed;
+    font-size:50px;
+    text-align: center;
+    border:2px solid transparent;
+    color:#08d9d6;
+    z-index: 5;
+    opacity: 0;
+}
+
+.div_upload_background:hover{
+    opacity: 0.95;
+    
+}
+
+.div_upload_background:hover .div_upload_background_text{
+    opacity: 0.95;
+    
+}
+
+.div_upload_background_image{
+    z-index: 2;
+}
+
+.div_loading{
+    width: 317px;
+    height: 317px;
+    background-color:rgba(0, 0, 0, 0.5);
+    background-image: url('./image/teeth.png');
+    background-repeat: round;
+    border:2px solid #252a34;
+    border-radius: 100%;
+    top: calc(50vh - 158.5px);
+    left: calc(50vw - 158.5px);
+    position: fixed;
+}
+
+.animation1{
+    width: 90px;
+    height: 90px;
+    border:2px solid transparent;
+    background-image: url("./image/loading.png");
+    top: calc(50vh - 45px);
+    left: calc(50vw - 45px);
+    position: fixed;
+    animation: target_image 4s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 50%; 
+    z-index: 3; 
+}
+
+.animation2{
+    width: 317px;
+    height: 317px;
+    border:2px solid transparent;
+    background-image: url("./image/loading.png");
+    top: calc(50vh - 158.5px);
+    left: calc(50vw - 158.5px);
+    position: fixed;
+    animation: target_image2 4s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 50%; 
+    z-index: 3; 
+}
+
+.animation3{
+    width: 64px;
+    height: 64px;
+    border:2px solid transparent;
+    top: calc(50vh - 32px);
+    left: calc(50vw - 32px);
+    position: fixed;
+    animation: target_image3 4s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 100%;
+    transform-origin: 50% 50%; 
+    z-index: 3; 
+}
+
+.s1{
+    animation-delay: 0.1s;
+    opacity: 0.9;
+}
+
+.s2{
+    animation-delay: 0.13s;
+    opacity: 0.8;
+}
+
+.s3{
+    animation-delay: 0.16s;
+    opacity: 0.7;
+}
+
+.s4{
+    animation-delay: 0.19s;
+    opacity: 0.6;
+}
+
+.s5{
+    animation-delay: 0.22s;
+    opacity: 0.5;
+}
+
+.s6{
+    animation-delay: 0.25s;
+    opacity: 0.4;
+}
+
+.s7{
+    animation-delay: 0.28s;
+    opacity: 0.3;
+}
+
+.s8{
+    animation-delay: 0.31s;
+    opacity: 0.2;
+}
+
+.s9{
+    animation-delay: 0.34s;
+    opacity: 0.1;
+}
+
+@keyframes target_image {
+    0% { transform: rotate(0deg); }
+    100% { 
+        transform: rotate(720deg);
+     }
+}
+
+@keyframes target_image2 {
+    0% { transform: rotate(-135deg); }
+    100% { 
+        transform: rotate(1000deg);
+        width: 96px;
+        height: 96px;
+        top: calc(50vh - 48px);
+        left: calc(50vw - 48px);
+     }
+}
+
+@keyframes target_image3 {
+    50% { transform: rotateY(-180deg); }
+}
+
+.div_upload img {
+    background-color:#ff2e63;
+    z-index: 2;
+    width: 400px;
+    height: 400px;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    border-radius: 100%;
+    border:2px solid #252a34;
+    position: fixed;
+}   
